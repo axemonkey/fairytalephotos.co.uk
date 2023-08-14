@@ -1,0 +1,7 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^http://fairytalephotos.co.uk/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://fairytalephotos.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.fairytalephotos.co.uk/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.fairytalephotos.com/.*$      [NC]
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]
